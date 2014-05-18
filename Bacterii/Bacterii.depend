@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1398366775 source:d:\c++ development\codejam\bacterii\main.cpp
+	<fstream>
+	<map>
+	<vector>
+

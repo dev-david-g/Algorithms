@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1398873122 source:d:\c++ development\codejam\cerere\main.cpp
+	<fstream>
+	<cstring>
+	<vector>
+
