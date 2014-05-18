@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1391697041 source:d:\c++ development\alibaba\main.cpp
+	<fstream>
+	<vector>
+	<stack>
+	<cstring>
+
