@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1397305394 source:d:\c++ development\codejam\b\main.cpp
+	<fstream>
+	<iomanip>
+	<cmath>
+
