@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1397336347 source:d:\c++ development\codejam\c\main.cpp
+	<fstream>
+	<string.h>
+	<cstdlib>
+
