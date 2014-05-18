@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1393189047 source:d:\c++ development\arhiva monthly\taxe\main.cpp
+	<fstream>
+	<cstring>
+	<queue>
+

@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1393007098 source:d:\c++ development\arhiva monthly\triopalindrom\main.cpp
+	<fstream>
+	<vector>
+	<cstring>
+	<algorithm>
+

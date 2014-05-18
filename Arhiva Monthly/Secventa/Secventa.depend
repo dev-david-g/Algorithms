@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1393191054 source:d:\c++ development\arhiva monthly\secventa\main.cpp
+	<fstream>
+	<deque>
+	<cstring>
+	<string>
+

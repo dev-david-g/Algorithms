@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1393059306 source:d:\c++ development\arhiva monthly\div4\main.cpp
+	<fstream>
+	<vector>
+	<cstring>
+	<algorithm>
+	<string>
+
