@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1397423158 source:d:\c++ development\codejam\r1a2008\main.cpp
+	<fstream>
+	<algorithm>
+	<vector>
+
+1397424514 source:d:\c++ development\codejam\r1a2008\source.cpp
+	<fstream>
+	<algorithm>
+	<vector>
+	<cstring>
+
