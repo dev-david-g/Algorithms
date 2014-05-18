@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1396825556 source:d:\c++ development\cobai\main.cpp
+	<fstream>
+	<map>
+	<queue>
+	<algorithm>
+	<iomanip>
+
