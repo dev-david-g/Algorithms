@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1393241185 source:d:\c++ development\dame\main.cpp
+	<fstream>
+	<cstring>
+
