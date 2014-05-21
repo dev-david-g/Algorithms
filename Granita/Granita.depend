@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1400705236 source:d:\development\cpp_development\granita\main.cpp
+	<fstream>
+	<cmath>
+	<algorithm>
+	<vector>
+	<deque>
+	<queue>
+	<map>
+	<set>
+	<string>
+	<cstring>
+	<cstdio>
+	<cstdlib>
+	<climits>
+
