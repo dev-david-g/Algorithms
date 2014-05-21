@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1394483059 source:d:\c++ development\dreapta\main.cpp
+	<fstream>
+	<cmath>
+
