@@ -31,37 +31,59 @@ inline int MAX (long a, long b) {if(a > b ) return a; else return b;}
 ifstream cin("plantatie.in") ;
 ofstream cout("plantatie.out");
 
-int  A[10][NMAX][NMAX] ;
+int  A[NMAX][NMAX][10], lg[10];
 int N, M ;
+
+inline int max(int a, int b, int c, int d)
+{
+
+    return max(a, max(b,  max(c, d))) ;
+}
 
 int main()
 {
     cin >> N >> M ;
 
     for(int i = 1 ; i <= N ; ++ i )
-        for(int j = 1 ; j <= N ; ++ j)
-            cin >> A[0][i][j] ;
+      {
+           for(int j = 1 ; j <= N ; ++ j)
+            cin >>A[i][j][0];
 
-   for(int i = 1 ; 1 << i <= N ; ++ i)
-    for(int j = 1 ; j + (1 << (i - 1) ) - 1 <= N ; ++ j )
-    for(int k = 1 ; k + (1 << (i - 1) ) -1 <= N ; ++ k)
-      A[i][j][k] = MAX ( MAX ( A[i - 1][j][k], A[i - 1][ j + (1 << (i -1) ) ][k + (1 << (i - 1) )] ),  MAX(A[i - 1 ][j + (1 << (i -1) )][k],  A[i - 1][j][k + (1 << (i - 1) )])) ;
+            if(i > 1)
+                lg[i] = lg[i >> 1] + 1 ;
+      }
 
-for(int i =  0 , k = 0, next; i < M ; ++ i, k = 0)
-{
-    int x, y, L ;
-    cin >> x >> y >> L ;
+      int l, a, b, c, d ;
 
-    for( next = 1 ; next <= L ; next <<= 1, ++ k) next >>= 1 ;
-     -- k ;
+      for(int k = 1 ; (1 << k) <= N ; ++ k)
+        for(int i = 1 ; i <= N - (1 << (k - 1)) + 1; ++ i)
+            for(int j = 1 ; j <= N - (1 << (k - 1)) + 1; ++ j )
+      {
+         l = 1 << (k - 1) ;
+         a = A[i][j][k - 1] ;
+         b = A[i + l][j][k - 1] ;
+         c = A[i][j + l][k - 1] ;
+         d = A[i + l][j + l][k - 1] ;
+         A[i][j][k] = max(a, b, c, d) ;
 
-    cout << MAX  (   MAX(    A[k][x][y],      A[k][x][y + L - next ]),     MAX(     A[k][x + L - next][y],        A[k][x + L - next][y + L - next])    ) << '\n' ;
+      }
 
 
-}
+      for(int i = 1 ; i <= M ; ++ i)
+      {
+          int x, y, L ;
+          cin >> x >> y >> L ;
 
+          int sol = lg[L] ;
+          l = L - (1 << (sol)) ;
+          a = A[x][y][sol] ;
+          b = A[x + l][y][sol] ;
+          c = A[x][y + l][sol] ;
+          d = A[x + l][y + l][sol] ;
 
+          cout << max(a, b, c, d) << '\n' ;
 
+      }
 
 
 
