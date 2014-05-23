@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1400860879 source:d:\development\cpp_development\plantatie\main.cpp
+	<fstream>
+	<cmath>
+	<algorithm>
+	<vector>
+	<deque>
+	<queue>
+	<map>
+	<set>
+	<string>
+	<cstring>
+	<cstdio>
+	<cstdlib>
+	<climits>
+
